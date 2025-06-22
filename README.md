@@ -1,7 +1,7 @@
 
 # CALROV Yaz Kampı
 
-Bu kamp, geçen sene eğitim verilemediğinden ve seneye görevlerinizin artacağından dolayı bir eğitim niteliğinde olacaktır. Lütfen ödevleri zamanında ve eksiksiz yetiştirelim. Çok önemli olmadığı sürece mazeret kabul edilmeyecektir. Hepinize kolay gelsin :)
+Bu kamp, seneye görevlerinizin artacağından dolayı bir eğitim niteliğinde olacaktır. Lütfen ödevleri zamanında ve eksiksiz yetiştirelim. Çok önemli olmadığı sürece mazeret kabul edilmeyecektir. Hepinize kolay gelsin :)
 
 # İletişim ve Kontrol Ödevi:
 

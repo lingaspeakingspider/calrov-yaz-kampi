@@ -20,8 +20,8 @@
 
 1. Gerekli paketlerin yüklü olduğundan emin ol ve kontrol et.
 
-2. İlk terminal sekmesinde dummy.py dosyasını çalıştır.
+2. İlk terminal sekmesinde dummy.py dosyasını çalıştır. `py dummy.py`
 
-3. Yeni bir terminal sekmesi aç ve 'py -m MAVProxy.mavproxy --master=udp:127.0.0.1:14550 --out=udp:127.0.0.1:14551' komutunu çalıştır. Bu sayede iki port(dummy.py ve connection.py) arasında veri aktarımı sağlanacak.
+3. Yeni bir terminal sekmesi aç ve `py -m MAVProxy.mavproxy --master=udp:127.0.0.1:14550 --out=udp:127.0.0.1:14551` komutunu çalıştır. Bu sayede iki port(dummy.py ve connection.py) arasında veri aktarımı sağlanacak.
 
-4. Son bir terminal sekmesi daha aç ve connection.py dosyasını çalıştır.
+4. Son bir terminal sekmesi daha aç ve connection.py dosyasını çalıştır. `py connection.py`

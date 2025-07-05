@@ -1,6 +1,7 @@
 from pymavlink import mavutil
 import time
 import logging
+import keyboard
 
 master = mavutil.mavlink_connection('udpout:127.0.0.1:14550')
 
@@ -29,11 +30,24 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 logger.setLevel(logging.DEBUG)
 
-while True:
-    master.mav.heartbeat_send( # type: ignore
-        mavutil.mavlink.MAV_TYPE_GENERIC,
-        mavutil.mavlink.MAV_AUTOPILOT_GENERIC,
-        0, 0, 0
-    )
-    logging.info("Heartbeat gönderildi.")
-    time.sleep(1)
+logging.info("Heartbeat gönderici başlatıldı. Çıkmak için ESC tuşuna basın.")
+
+try:
+    while True:
+        if keyboard.is_pressed('esc'):
+            logging.info("ESC tuşuna basıldı. Program sonlandırılıyor.")
+            break
+
+        master.mav.heartbeat_send( # type: ignore
+            mavutil.mavlink.MAV_TYPE_GENERIC,
+            mavutil.mavlink.MAV_AUTOPILOT_GENERIC,
+            0, 0, 0
+        )
+        logging.info("Heartbeat gönderildi.")
+        time.sleep(1)
+
+except KeyboardInterrupt:
+    logging.warning("Klavye kesintisi (CTRL+C) ile program sonlandırıldı.")
+
+finally:
+    logging.info("Program kapatıldı.")

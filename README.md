@@ -16,6 +16,7 @@
 	
 6. Klavye modunda hareket komutları mavlink ile verilecek ve verildiğinde x, y, z ve yaw değerleri ekranda gösterilecek. Ekranda gösterirken print() fonksiyonu değil "logging" kütüphanesi kullanılacak. Arm, disarm ve mod komutları da yine mavlink ile verilecek ve yine logging kütüphanesi ile ekrana yazdırılacak. Klavye modu çalışırken arka planda aynı anda heartbeat mesajının txt dosyasına yazdırılması da çalışacak. Bu ikisini aynı anda çalıştırmak için threading ve multiprocessing kütüphaneleri kullanılabilir. Servo motora komut göndermede ise verilen mesaj türü kullanılarak mavlink ile komut gönderilecek. 
 
+
 # Kullanım
 
 1. Gerekli paketlerin yüklü olduğundan emin ol ve kontrol et.
